@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initialscale=1.0">
-<h1>John Doe</h1>
-</head>
-<h2>IT Experte</h2>
-<body>
-<!-- Inhalt -->
-<img src="bild.jpg" alt="Ein Bild" width="150" height="200">
+   
+<body bgcolor="000000">
+    
+<h1 align="center"> <front size="7" color="#00CCFF"> <i>
+    SprayGame
+</i> </front> </h1>
+
+<h2>
+    Quick Links
+</h2>
+
+<body bgcolor="000000">
+
 <ul>
-                <p> <li> Anschrift:       <i> John Doe </i> </li> </p>
-                <p> <li> Email:           <a href="https://mail.google.com/mail/u/0/#inbox" <i>John.Doe@hs.Pfortzheim.de </i> </a> </li> </p>
-                <p> <li> Telefon:         <i> 01234/ 56789 </i> </li> </p>
-                <p> <li> Geboren am:      <i> 20.02.2000 </i> </li> </p>
+                <p> <li> Youtube:   <a href="https://www.youtube.com/channel/UC-GtnsKnMN9Y8K43lPTA3BA"> Click here </A>
+                <p> <li> Instagram: 
+                <p> <li> Twitter:   
+                <p> <li> Email:           
 </ul>
-<h3>Berufserfahrung</h3>
+<h3> related genre </h3>
 <!-- Inhalt -->
 <ul>
                 <p>  </p> 
                 <p>  </p>
 </body>
 </html>
+                    
