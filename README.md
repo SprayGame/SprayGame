@@ -20,11 +20,11 @@
                 <p> <li> Twitter:   
                 <p> <li> Email:           
 </ul>
-<h3> related genre </h3>
+<h3> Related Genres </h3>
 <!-- Inhalt -->
 <ul>
-                <p>  </p> 
-                <p>  </p>
+                <p>  <li> <i> Short Films </i> </li> </p> 
+                <p>  <li> <i> Gaming </i> </li> </p> 
 </body>
 </html>
                     
