@@ -2,11 +2,11 @@
 <html>
 <head>
    
-<body bgcolor="000000">
+<body bgcolor="#BEBEBE">
     
-<h1 align="center"> <i>
+<h1 align="center"> <p style="color: #BEBEBE"> <i>
     SprayGame
-</i> </h1>
+</i> </p> </h1>
 
 <h2>
     Quick Links
