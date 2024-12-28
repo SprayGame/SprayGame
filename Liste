@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define COLUMN_COUNT 3
+
+typedef struct {
+    char **rows;
+    int row_count;
+    int max_rows;
+} List;
+
+void initialize_list(List *list, int initial_size) {
+    list->rows = (char **)malloc(initial_size * sizeof(char *));
+    list->row_count = 0;
+    list->max_rows = initial_size;
+}
+
+void add_row(List *list, const char *row) {
+    if (list->row_count >= list->max_rows) {
+        list->max_rows *= 2;
+        list->rows = (char **)realloc(list->rows, list->max_rows * sizeof(char *));
+    }
+    list->rows[list->row_count] = (char *)malloc((strlen(row) + 1) * sizeof(char));
+    strcpy(list->rows[list->row_count], row);
+    list->row_count++;
+}
+
+void print_list(const List *list) {
+    for (int i = 0; i < list->row_count; ++i) {
+        printf("%s\n", list->rows[i]);
+    }
+}
+
+void free_list(List *list) {
+    for (int i = 0; i < list->row_count; ++i) {
+        free(list->rows[i]);
+    }
+    free(list->rows);
+}
+
+int main() {
+    List lists[COLUMN_COUNT];
+    for (int i = 0; i < COLUMN_COUNT; ++i) {
+        initialize_list(&lists[i], 2);
+    }
+
+    add_row(&lists[0], "Eintrag 1, Spalte 1");
+    add_row(&lists[0], "Eintrag 2, Spalte 1");
+    add_row(&lists[1], "Eintrag 1, Spalte 2");
+    add_row(&lists[1], "Eintrag 2, Spalte 2");
+    add_row(&lists[2], "Eintrag 1, Spalte 3");
+    add_row(&lists[2], "Eintrag 2, Spalte 3");
+
+    for (int i = 0; i < COLUMN_COUNT; ++i) {
+        printf("Liste %d:\n", i + 1);
+        print_list(&lists[i]);
+        printf("\n");
+    }
+
+    for (int i = 0; i < COLUMN_COUNT; ++i) {
+        free_list(&lists[i]);
+    }
+
+    return 0;
+}
